@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TCP_Client</string>
+    <string name="tcp_send">内容送信</string>
+    <string name="textview">TCP送信</string>
+    <string name="edittext">送信内容</string>
+    <string name="name">内容</string>
+    <string name="textview1">TCPサーバー</string>
+    <string name="tcp_server">サーバー開始</string>
+    <string name="get_content">受信内容</string>
+    <string name="textview2">アドレス : 192.168.1.31:3123</string>
+    <string name="ip">IP</string>
+    <string name="port">Port</string>
+    <string name="port_text">3123</string>
+    <string name="ip_text">192.168.1.31</string>
+    <string name="copy_text">最新の内容\nコピー</string>
+</resources>

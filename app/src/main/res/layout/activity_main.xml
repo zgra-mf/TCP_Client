@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tcp_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tpc_send_event"
+        android:text="@string/tcp_send"
+        app:layout_constraintStart_toStartOf="@+id/send_text"
+        app:layout_constraintTop_toBottomOf="@+id/send_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <EditText
+        android:id="@+id/send_text"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/IP_text"
+        app:layout_constraintTop_toBottomOf="@+id/IP_text" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/textview1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tcp_send" />
+
+    <TextView
+        android:id="@+id/ipshow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="tcp_server_event"
+        android:text="@string/textview2"
+        app:layout_constraintBottom_toBottomOf="@+id/copy_tcp"
+        app:layout_constraintStart_toEndOf="@+id/copy_tcp" />
+
+    <EditText
+        android:id="@+id/result_text"
+        android:layout_width="369dp"
+        android:layout_height="324dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="start|top"
+        android:hint="@string/get_content"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintStart_toStartOf="@+id/tcp_server"
+        app:layout_constraintTop_toBottomOf="@+id/ipshow_text" />
+
+    <Button
+        android:id="@+id/tcp_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tcp_server_event"
+        android:text="@string/tcp_server"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/IP_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ip"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/ip_text"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/Port_text"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/port"
+        android:inputType="textPersonName"
+        android:text="@string/port_text"
+        app:layout_constraintStart_toEndOf="@+id/IP_text"
+        app:layout_constraintTop_toTopOf="@+id/IP_text" />
+
+    <Button
+        android:id="@+id/copy_tcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_text"
+        android:onClick="copy_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tcp_server"
+        app:layout_constraintStart_toEndOf="@+id/tcp_server" />
+
+</android.support.constraint.ConstraintLayout>
